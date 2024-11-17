@@ -7,6 +7,7 @@ import project from "../assets/projects/project.png";
 import lift from "../assets/projects/lift.png";
 import krypto from "../assets/projects/krypto.png";
 import kickstart from "../assets/projects/kickstart.png";
+import aura from "../assets/projects/aura.png"
 
 const Projects = () => {
   return (
@@ -33,6 +34,17 @@ const Projects = () => {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={aura}
+              isBlog={false}
+              title=" AuraAI"
+              description="Aura AI is a personal chatbot powered by the Gemini API, designed to provide users with an interactive and personalized experience. Built using Next.js and Tailwind CSS, Aura AI offers a modern and responsive interface that adapts seamlessly to any device."
+              ghLink="https://github.com/mdkamran04/Aura-AI"
+              demoLink="https://aura-ai-psi.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={project}
               isBlog={false}
               title="Flavour Fiesta"
@@ -51,7 +63,7 @@ const Projects = () => {
 
 Creating TravelBliss involved extensive planning and design to ensure a user-friendly interface. I meticulously worked on responsive layouts to make sure the website looks great on all devices. Integrating the Google Maps API was a rewarding challenge, allowing users to easily locate travel destinations."
               ghLink="https://github.com/mdkamran04/TravelBliss"
-             demoLink="https://travel-bliss-fawn.vercel.app/"
+              demoLink="https://travel-bliss-fawn.vercel.app/"
             />
           </Col>
 
@@ -61,24 +73,21 @@ Creating TravelBliss involved extensive planning and design to ensure a user-fri
               isBlog={false}
               title="Blog Website(Under Progress)"
               description="This blogging application features a RESTful API server built with Nodejs and Expressjs. The data is retrieved from the API server and displayed on a user-friendly interface designed using React, Redux, and styled-components for a seamless experience."
-              
             />
           </Col>
 
-          
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={krypto}
               isBlog={false}
               title="FitFusion(Under Progress)"
               description="FitFusion is an innovative e-commerce platform that revolutionizes online shopping. With cutting-edge features like virtual try-ons powered by Hugging Face API and personalized recommendations through LangChain and Generative AI, customers can effortlessly find their perfect fit. Experience fashion like never before—browse, try, and buy with confidence, all from the comfort of your home. "
-              
             />
           </Col>
         </Row>
       </Container>
     </Container>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
